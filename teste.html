@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<div id="divid">
+ <input type="text" id="txtImput">
+ <input type="button" id="btnOk" onclick="Gerar()" value="OK">
+ 
+</div> 
+
+<script type="text/javascript">
+ 
+ function Gerar(){
+  num = document.getElementById('txtImput').value;
+  sum = 0;
+  window.alert("Irá gerar " + num + " Campos");
+  
+    for (var i = 1; i <= num; i++) {
+    
+    
+    document.write('<input id="ida" type="text"> <br>');
+    document.getElementById("ida").id="novoid" + i;
+    alert("Rodou " + i + " vez" );
+
+    
+    
+
+    };
+
+  document.write('<input type=button value="Soma" onclick=soma()>');
+
+  
+   
+ }
+
+ function soma(){
+   window.alert("Função soma executada");
+   for (var i = 1; i <= num; i++) {
+    
+    sum = sum + parseInt(document.getElementById("novoid"+i).value);
+
+   }
+   
+   window.alert("O valore total da soma dos campos é: " + sum);
+   sum = 0;
+ }
+
+</script
+
+
+</body>
+</html>
