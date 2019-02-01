@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 	<meta charset="UTF-8">
 	<title>Teste Técnico Desenvolvedor Jr</title>
 	
 	<!-- Referenciando o Arquivo CSS -->
 	<link href="css/style.css" rel="stylesheet">
-	<!-- Referenciando o Arquivo js contendo o Javascript-->
-	<link href="js/scripts.js" rel="text/javascript">
-	<script src="js/scripts.js"></script>
+	
 
 </head>
+
 <body>
 	<!-- Div principal -->
-	<div id="DivMain">	
+	<div class="DivMain">	
+	
 		<!-- Descrição da atividade-->
-		 <p>Quantidade de itens a serem somados: </br>
-		 <!-- Textbox para inserir a quantidade de campos a serem gerados-->	
-		 <input type="text" id="TxtCampos">
-		 <!-- Botão para gerar os proximos textbox -->
-		 <button class="button">Botão</button>
-		 <input type="button" id="BtnGerarCampos" onclick="Gerar()" value="Gerar Campos">
-		 
+		 <h2>Quantidade de itens a somar: </h2>
+		 <!-- input para inserir a quantidade de campos a serem gerados-->	
+		 <input type="text" id="TxtCampos" class="css-input">
+		 <!-- Botão para gerar os proximos inputs -->
+		 <a href="#" onclick="Gerar()" id=BtnGerarCampos class="myButton">Gerar</a>
+		 		 
 	</div> 
 
+
+
+	<!-- Referenciando o Arquivo js contendo o Javascript-->
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>
